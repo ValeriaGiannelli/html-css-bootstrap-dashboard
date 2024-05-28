@@ -88,7 +88,7 @@
                 <div class="col p-0">
 
                     <!-- box con altezza 100vh e overflow -->
-                    <div class="box vh-100 overflow-auto">
+                    <div class="box ms_box overflow-auto">
 
                         <!-- headr dashboard barra blu -->
                         <div class="ms_bg_blu">
@@ -159,11 +159,11 @@
                                             <div class="accordion list-group-flush" id="accordionExample">
                                                 <div class="accordion-item">
                                                   <h2 class="accordion-header">
-                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                       Accordion Item #1
                                                     </button>
                                                   </h2>
-                                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                                     </div>
@@ -203,7 +203,60 @@
                                  <!-- colonna destra -->
                                  <div class="col-12 col-md-5">
                                     <div class="box">
-                                        TODO e grafico
+
+                                        <!-- Checkbox nelle card BS: https://getbootstrap.com/docs/5.3/forms/checks-radios/ -->
+                                        <div class="card">
+                                            <!-- titolo card -->
+                                            <div class="card-header">
+                                              Todo
+                                            </div>
+
+                                            <!-- Checkbox -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  Default checkbox
+                                                </label>
+                                            </div>
+
+                                            <!-- Checkbox -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                Checked checkbox
+                                                </label>
+                                            </div>
+
+                                            <!-- Checkbox -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                Checked checkbox
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card">
+                                                <img src="..." class="card-img-top" alt="...">
+
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Utenti attivi</h5>
+                                                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
+                                                </div>
+
+                                                <ul class="list-group list-group-flush">
+                                                  <li class="list-group-item">An item</li>
+                                                  <li class="list-group-item">A second item</li>
+                                                  <li class="list-group-item">A third item</li>
+                                                </ul>
+
+                                                <div class="card-body">
+                                                  <a href="#" class="card-link">Card link</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
                                     </div>
                                 </div>
 
