@@ -62,20 +62,16 @@
                         <a href="#" class="ms_right_icons"><i class="fa-solid fa-ellipsis-vertical"></i></a>
 
 
-                        <!-- campanella con offcanvas BS: https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
-                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bell"></i></button>
-    
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <!-- campanella con dropdown BS: https://getbootstrap.com/docs/5.3/components/dropdowns/#overview -->
 
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-
-                        <div class="offcanvas-body">
-                            ...
-                        </div>
-                        </div>
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" style="">
+                            <li><button class="dropdown-item" type="button">Profilo</button></li>
+                            <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                            <li><button class="dropdown-item" type="button">Logout</button></li>
+                        </ul>
                     
                 </div>
 
@@ -167,7 +163,25 @@
                                 <!-- nuovo studente -->
                                 <div class="col-12 col-md-5">
                                     <div class="ms_flex">
-                                        <span class="fs-6">Nuovo studente</span> <i class="fa-regular fa-square-plus"></i>
+
+                                        <span class="fs-6">Nuovo studente</span>
+
+                                         <!-- segno più con offcanvas BS: https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
+                                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-regular fa-square-plus"></i></button>
+                    
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="offcanvas-body">
+                                                ...
+                                            </div>
+                                        </div>
+                        
+                        
                                     </div>
                                 </div>
 
