@@ -136,7 +136,7 @@
                         <div class="ms_bg_blu">
 
                             <!-- riga in flex -->
-                            <div class="row flex-column-reverse flex-md-row justify-content-md-between align-items-md-center">
+                            <div class="row flex-column-reverse flex-md-row justify-content-md-between p-3">
 
                                 <!-- Colonna piano base e studenti-->
                                 <div class="col-12 col-md">
@@ -150,20 +150,36 @@
                                             <span class="fs-3 ms_colo_text">Boolean</span> 
                                             <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
 
-                                            <!-- Breadcrumbs BS -->
+                                            <!-- Breadcrumbs BS: https://getbootstrap.com/docs/5.2/components/breadcrumb/#example -->
                                             <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
                                                 <ol class="breadcrumb">
-                                                  <li class="breadcrumb-item"><a href="#"><span class="badge rounded-pill text-bg-primary">3 app</span></a></li>
-                                                  <li class="breadcrumb-item active" aria-current="page"><span class="badge rounded-pill text-bg-primary">mobile app</span> <span class="badge rounded-pill text-bg-primary">web app</span> <span class="badge rounded-pill text-bg-primary">vlog app</span></li>
+                                                    
+                                                    <li class="breadcrumb-item">
+                                                        <a href="#">
+                                                            <span class="badge rounded-pill text-bg-primary">3 app</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="breadcrumb-item active" aria-current="page">
+
+                                                        <span class="badge rounded-pill text-bg-primary d-lg-none"><i class="fa-solid fa-plus"></i></span>
+
+                                                        <span class="badge rounded-pill text-bg-primary d-none d-lg-inline">mobile app</span>
+
+                                                        <span class="badge rounded-pill text-bg-primary d-none d-lg-inline">web app</span>
+
+                                                        <span class="badge rounded-pill text-bg-primary d-none d-lg-inline">vlog app</span>
+                                                    </li>
                                                 </ol>
                                             </nav>
                                         </div>
 
                                         <!-- studenti -->
                                         <div class="col-12 col-md-6">
-                                            <div class="box">
-                                                Studenti
-                                            </div>
+                                    
+                                                <span class="ms_colo_text">Studenti online negli ultimi 30 minuti</span>
+                                                <span class="d-block fs-3 ms_colo_text">125</span>
+                                           
                                         </div>
 
                                     </div>
@@ -172,27 +188,28 @@
                                 
                                 <!-- nuovo studente -->
                                 <div class="col-12 col-md-auto">
-                                    <div class="ms_flex">
 
-                                        <span class="fs-6">Nuovo studente</span>
+                                        <span class="fs-6 ms_colo_text">Nuovo studente</span>
 
                                          <!-- segno più con offcanvas BS: https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
-                                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-regular fa-square-plus"></i></button>
+                                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <i class="fa-regular fa-square-plus ms_colo_text"></i>
+                                        </button>
                     
                                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 
+                                            <!-- contenuto dell'offcanvas -->
                                             <div class="offcanvas-header">
                                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                             </div>
 
+                                            <!-- campi da compilare -->
                                             <div class="offcanvas-body">
                                                 ...
                                             </div>
                                         </div>
-                        
-                        
-                                    </div>
+ 
                                 </div>
 
                             </div>

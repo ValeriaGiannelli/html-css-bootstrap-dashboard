@@ -117,23 +117,33 @@ body{
 /*******************************************************/
 
 
+
+
+
+/* BARRA DELLA DASHBOARD */
 .ms_bg_blu{
     background-color: rgb(62 102 231);
 }
 
-.ms_flex{
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 20px 0 20px 10px;
-}
 
-.ms_flex .fa-square-plus{
-    font-size: 24px;
-    padding-left: 20px;
+/* cambio colore del segno delle breadcrumb */
+.breadcrumb-item + .breadcrumb-item::before{
     color: white;
 }
 
+.text-bg-primary{
+    background-color: rgb(49 82 186) !important;
+}
+
+/* contenitore del nuovo studente */
+.ms_colo_text.fa-square-plus{
+    font-size: 40px;
+    color: white;
+}
+
+
+
+/* CORPO DELLA DASHBOARD */
 .ms_bg_gray{
     background-color: gray;
 }
