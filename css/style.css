@@ -16,4 +16,6 @@ body{
     margin-top:100px;
 }
 
-ms_box
+.ms_box{
+    height: calc(100vh - 100px);
+}
