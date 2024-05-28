@@ -83,6 +83,8 @@
         </div>
     </section>
 
+
+    <div class="container-fluid">
         <!-- corpo centrale -->
         <!-- messo un maringe mio per prendere tutto lo spazio -->
         <div class="ms_margin">
@@ -92,23 +94,34 @@
 
                 <!-- menu di sinistra con padding left zero -->
                 <div class="col-2 p-0">
-                    <div class="box ms_box position-relative">
+                    <div class="ms_box ms_bg_img position-relative">
 
                         <!-- menu verticale BS:  https://getbootstrap.com/docs/5.3/components/navs-tabs/ -->
-                        <ul class="nav flex-column">
+                        <ul class="nav ms_box mh-100 flex-column align-items-center align-items-lg-start ms_box">
+
                             <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                <a class="nav-link ms_colo_text" aria-current="page" href="#">
+                                  <i class="fa-solid fa-house"></i><span class="d-sm-none d-lg-inline">Home</span>
+                                </a>
                             </li>
+
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link ms_colo_text" href="#">
+                                    <i class="fa-solid fa-chart-simple"></i><span class="d-sm-none d-lg-inline">Stats</span>
+                                </a>
                             </li>
+
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link ms_colo_text" href="#">
+                                    <i class="fa-solid fa-signal"></i><span class="d-sm-none d-lg-inline">Signals</span>
+                                </a>
                             </li>
                           
 
-                            <li class="nav-item">
-                                <a class="nav-link position-absolute bottom-0 start-0" href="#">Link</a>
+                            <li class="nav-item mt-auto">
+                                <a class="nav-link ms_colo_text" href="#">
+                                    <i class="fa-solid fa-gear"></i><span class="d-sm-none d-lg-inline">Admin</span>
+                                </a>
                             </li>
                             
                         </ul>
