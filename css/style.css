@@ -1,0 +1,19 @@
+/* DEBUG */
+.box{
+    background-color: yellow;
+    border: 1px solid black;
+    min-height: 100px;
+}
+
+
+
+/* regole generali */
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.ms_margin{
+    margin-top:100px;
+}
+
+ms_box
