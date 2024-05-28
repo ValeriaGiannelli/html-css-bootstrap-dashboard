@@ -23,3 +23,12 @@ body{
 .ms_bg_blu{
     background-color: blue;
 }
+
+.ms_bg_gray{
+    background-color: gray;
+}
+
+.accordion-item:first-of-type{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
