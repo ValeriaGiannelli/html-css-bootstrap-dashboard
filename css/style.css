@@ -58,6 +58,8 @@ body{
         display: none;
     }
 
+
+    /* PUOI FARLE CON BS */
     .ms_right_icons{
         display: inline;
     }
@@ -116,7 +118,19 @@ body{
 
 
 .ms_bg_blu{
-    background-color: blue;
+    background-color: rgb(62 102 231);
+}
+
+.ms_flex{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px 0 20px 10px;
+}
+
+.ms_flex .fa-square-plus{
+    font-size: 24px;
+    padding-left: 20px;
 }
 
 .ms_bg_gray{
