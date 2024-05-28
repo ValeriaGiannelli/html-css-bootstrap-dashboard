@@ -23,32 +23,65 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!-- barra in alto -->            
-        <div class="row fixed-top">
-            <!-- logo -->
-            <div class="col-3">
-                <div class="box">
 
-                </div>
-            </div> 
+    <section id="header" class="fixed-top bg-light">
 
-            <!-- barra di navigazione -->
-            <div class="col">
-                <div class="box">
+        <div class="container-fluid">
+            <!-- barra in alto -->            
+            <div class="row bg-white align-items-center">
+                <!-- logo -->
+                <div class="col-2">
+                    <div id="logo">
+                        <a href="#">
+                            <img src="img/mobile-logo.png" class="icon-logo" alt="">
+                            <img src="img/logo.svg" class="extended-logo" alt="">
+                        </a>                        
+                    </div>
+                </div> 
+
+                <!-- barra di navigazione -->
+                <div class="col p-0">
+
+                    <!-- Search bar BS: https://getbootstrap.com/docs/5.3/components/navbar/ -->
+                    <form class="d-flex" role="search">
+                        <!-- bottone lente -->
+                        <button class="btn btn-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <!-- barra navigazione -->
+                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        
+                    </form>
+
+                </div> 
+
+                <!-- tasti destra -->
+                <div class="col-2 text-end ps-0">
+
+                        <!-- icone supplemetari da desktop -->
+                        <a href="#" class="ms_right_icons"><i class="fa-solid fa-list"></i></a>
+                        <a href="#" class="ms_right_icons"><i class="fa-solid fa-question"></i></a>
+                        <a href="#" class="ms_right_icons"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+
+                        <!-- campanella con offcanvas BS: https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bell"></i></button>
+    
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            ...
+                        </div>
+                        </div>
                     
                 </div>
-            </div> 
 
-            <!-- tasti destra -->
-            <div class="col-2 col-lg-3">
-                <div class="box">
-                    
-                </div>
             </div>
-
         </div>
-   
+    </section>
 
         <!-- corpo centrale -->
         <!-- messo un maringe mio per prendere tutto lo spazio -->
@@ -236,7 +269,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="card">
+                                        <!-- card con Grafico Utenti attivi -->
+                                        <div class="card p-2">
                                             <div class="card">
                                                 <img src="..." class="card-img-top" alt="...">
 
