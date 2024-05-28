@@ -89,7 +89,7 @@
             <div class="row">
 
                 <!-- menu di sinistra con padding left zero -->
-                <div class="col-2 p-0">
+                <div class="col-auto p-0">
                     <div class="ms_box ms_bg_img position-relative">
 
                         <!-- menu verticale BS:  https://getbootstrap.com/docs/5.3/components/navs-tabs/ -->
@@ -136,17 +136,27 @@
                         <div class="ms_bg_blu">
 
                             <!-- riga in flex -->
-                            <div class="row flex-column-reverse flex-md-row">
+                            <div class="row flex-column-reverse flex-md-row justify-content-md-between align-items-md-center">
 
                                 <!-- Colonna piano base e studenti-->
-                                <div class="col-12 col-md-7">
+                                <div class="col-12 col-md">
+
                                     <!-- riga con le colonne -->
                                     <div class="row">
+
                                         <!-- Piano base boolean -->
-                                        <div class="col-12 col-md-6"> 
-                                            <div class="box">
-                                                Boolean
-                                            </div>
+                                        <div class="col-12 col-md-6">
+
+                                            <span class="fs-3 ms_colo_text">Boolean</span> 
+                                            <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
+
+                                            <!-- Breadcrumbs BS -->
+                                            <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                  <li class="breadcrumb-item"><a href="#"><span class="badge rounded-pill text-bg-primary">3 app</span></a></li>
+                                                  <li class="breadcrumb-item active" aria-current="page"><span class="badge rounded-pill text-bg-primary">mobile app</span> <span class="badge rounded-pill text-bg-primary">web app</span> <span class="badge rounded-pill text-bg-primary">vlog app</span></li>
+                                                </ol>
+                                            </nav>
                                         </div>
 
                                         <!-- studenti -->
@@ -161,7 +171,7 @@
 
                                 
                                 <!-- nuovo studente -->
-                                <div class="col-12 col-md-5">
+                                <div class="col-12 col-md-auto">
                                     <div class="ms_flex">
 
                                         <span class="fs-6">Nuovo studente</span>
