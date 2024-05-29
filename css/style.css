@@ -38,7 +38,7 @@ body{
 
 /**** barra di ricerca ****/
 /* modifica elementi lente di ricerca */
-.btn.btn-light{
+#header .btn.btn-light{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     background-color: rgb(229 229 229);
@@ -46,7 +46,7 @@ body{
 }
 
 /* modifica sfondo e bordi barra di ricerca */
-.form-control{
+#header .form-control{
     background-color: rgb(229 229 229);
     border: none;
     border-top-left-radius: 0;
@@ -54,7 +54,7 @@ body{
 }
 
 /* modifica dei bordi e colore al click nella barra */
-.form-control:focus{
+#header .form-control:focus{
     background-color: rgb(229 229 229);
     border-color: none;
     box-shadow: none;
@@ -110,20 +110,10 @@ body{
     background-color: rgb(11 28 52);
 }
 
-/* MENU DI SINISTRA */
-
-
-.ms_colo_text{
-    color: white;
-}
-
 
 /************  RESPONSIVE - barra in alto **************/
 @media all and (min-width:992px) {
-    .ms_colo_text span{
-        display: inline;
-    } 
-    
+  
     .fa-house{
         padding-right: 12px;
     }
@@ -162,7 +152,7 @@ body{
 }
 
 /* contenitore del nuovo studente */
-.ms_colo_text.fa-square-plus{
+.fa-square-plus{
     font-size: 40px;
     color: white;
 }
