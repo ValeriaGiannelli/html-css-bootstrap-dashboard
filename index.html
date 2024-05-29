@@ -67,7 +67,8 @@
                         <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bell"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end" style="">
+
+                        <ul class="dropdown-menu dropdown-menu-end">
                             <li><button class="dropdown-item" type="button">Profilo</button></li>
                             <li><button class="dropdown-item" type="button">Fatturazione</button></li>
                             <li><button class="dropdown-item" type="button">Logout</button></li>
@@ -139,13 +140,13 @@
                             <div class="row flex-column-reverse flex-md-row justify-content-md-between p-3">
 
                                 <!-- Colonna piano base e studenti-->
-                                <div class="col-12 col-md">
+                                <div class="col-12 col-md-7">
 
                                     <!-- riga con le colonne -->
                                     <div class="row">
 
                                         <!-- Piano base boolean -->
-                                        <div class="col-12 col-md-6">
+                                        <div class="col-12 col-md-6 col-lg-8">
 
                                             <span class="fs-3 ms_colo_text">Boolean</span> 
                                             <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
@@ -175,7 +176,7 @@
                                         </div>
 
                                         <!-- studenti -->
-                                        <div class="col-12 col-md-6">
+                                        <div class="col-12 col-md">
                                     
                                                 <span class="ms_colo_text">Studenti online negli ultimi 30 minuti</span>
                                                 <span class="d-block fs-3 ms_colo_text">125</span>
@@ -206,7 +207,106 @@
 
                                             <!-- campi da compilare -->
                                             <div class="offcanvas-body">
-                                                ...
+                                                <form class="row g-3">
+                                                    <!-- nome -->
+                                                    <div class="col-6">
+                                                      <label for="name" class="form-label">Nome</label>
+                                                      <input type="text"  class="form-control" placeholder="First name" aria-label="First name" id="name">
+                                                    </div>
+                                                    <!-- cognome -->
+                                                    <div class="col-6">
+                                                      <label for="Lastname" class="form-label">Cognome</label>
+                                                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Lastname">
+                                                    </div>
+                                              
+                                                    <!-- mail e password -->
+                                                    <div class="mb-3 col-6">
+                                                      <label for="inputEmail4" class="form-label">Email</label>
+                                              
+                                                      <div class="input-group">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control" id="inputEmail4" aria-describedby="basic-addon1">
+                                                      </div>
+                                                    </div>
+                                              
+                                                    <div class="mb-3 col-6">
+                                                      <label for="inputPassword4" class="form-label">Password</label>
+                                                      <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <!---------------------------->
+                                              
+                                                    <!-- Indirizzo mail e password -->
+                                                    <div class="mb-3 col-6">
+                                                      <label for="inputEmail4" class="form-label">Indirizzo Email</label>
+                                              
+                                                      <div class="input-group">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control" id="inputEmail4" aria-describedby="basic-addon1">
+                                                      </div>
+                                                    </div>
+                                              
+                                                    <div class="mb-3 col-6">
+                                                      <label for="inputPassword4" class="form-label">Password</label>
+                                                      <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <!---------------------------->
+                                              
+                                                    <!-- inidirzzo -->
+                                                    <div class="col-12">
+                                                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                    </div>
+                                              
+                                                    <div class="col-md-6">
+                                                      <label for="inputCity" class="form-label">Città</label>
+                                                      <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                              
+                                                    <div class="col-md-4">
+                                                      <label for="inputState" class="form-label">Stato</label>
+                                                      <select id="inputState" class="form-select">
+                                                        <option selected="">Scegli...</option>
+                                                        <option value="1">Novigard</option>
+                                                        <option value="2">Tussaint</option>
+                                                        <option value="3">Skellige</option>
+                                                      </select>
+                                                    </div>
+                                              
+                                                    <div class="col-md-2">
+                                                      <label for="inputZip" class="form-label">CAP</label>
+                                                      <input type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                    <!-------------------------->
+                                              
+                                                    <!-- Foto -->
+                                                    <div class="col-12">
+                                                      <label for="inputGroupFile04" class="form-label">Foto</label>
+                                              
+                                                      <div class="input-group">
+                                                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                                      </div>
+                                                    </div>
+                                                    <!-------------------------->
+                                              
+                                                    <!-- tasto per proseguire -->
+                                                    <div class="col-12">
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                          Seleziona per proseguire
+                                                        </label>
+                                                      </div>
+                                                    </div>
+                                                    <!---------------------->
+                                              
+                                              
+                                                    <!-- bottoni salva e svuota -->
+                                                    <div class="col-12">
+                                                      <button type="submit" class="btn btn-primary">Salva</button>
+                                                      <button type="button" class="btn btn-warning">Svuota</button>
+                                                    </div>
+                                                    <!----------------------------->
+                                                  </form>
                                             </div>
                                         </div>
  

@@ -141,6 +141,18 @@ body{
     color: white;
 }
 
+.offcanvas.offcanvas-end{
+    width: 100%;
+}
+
+/************  RESPONSIVE - offcanvas **************/
+@media all and (min-width:992px) {
+    .offcanvas.offcanvas-end{
+        width: 50%;
+    }
+}
+/*******************************************************/
+
 
 
 /* CORPO DELLA DASHBOARD */
