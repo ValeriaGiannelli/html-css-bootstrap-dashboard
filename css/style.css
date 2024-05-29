@@ -160,6 +160,27 @@ body{
     background-color: gray;
 }
 
+/* aggiunstamento cointainer mio per dashboard */
+.ms_container{
+    padding: 20px 0 40px 23px;
+}
+
+/* modifiche della tabella */
+.fa-code{
+    background-color: rgb(235 105 83);
+    color: white;
+    border-radius: 50%;
+    padding: 7px 5px;
+    margin-right: 10px;
+}
+
+.bi-pencil-fill, .bi-trash-fill{
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 5px 3px;
+}
+
 .accordion-item:first-of-type{
     border-top-left-radius: 0;
     border-top-right-radius: 0;

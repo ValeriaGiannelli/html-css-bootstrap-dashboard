@@ -134,13 +134,13 @@
                 <div class="col p-0">
 
                     <!-- box con altezza calcolata e overflow -->
-                    <div class="ms_box overflow-y-auto">
+                    <div class="ms_box overflow-auto">
 
                         <!-- headr dashboard barra blu -->
                         <div class="ms_bg_blu">
 
                             <!-- riga in flex -->
-                            <div class="row flex-column-reverse flex-md-row justify-content-md-between p-3">
+                            <div class="row flex-column-reverse flex-md-row justify-content-md-between p-4">
 
                                 <!-- Colonna piano base e studenti-->
                                 <div class="col-12 col-md-7">
@@ -319,42 +319,323 @@
                         </div>
 
                         <!-- contenuto dashboard -->
-                        <div class="ms_bg_gray">
+                        <div class="bg-light">
                             <!-- riga -->
                             <div class="row">
 
                                 <!-- colonna sinistra -->
                                 <div class="col-12 col-md-7">
-                                    <div class="box">
+                                    <div class="ms_container">
 
                                         <!-- Lista classi BS: https://getbootstrap.com/docs/5.3/components/card/#about -->
-                                        <div class="card">
-                                            <div class="card-header">
+                                        <div class="card mb-4">
+                                            <div class="card-header fs-3">
                                               Prossime classi
                                             </div>
 
+                                            <!-- tabella BS:  https://getbootstrap.com/docs/5.3/content/tables/ -->
                                             <table class="table">
+                                                <!-- titoli colonne -->
                                                 <thead>
                                                   <tr>
-                                                    <th class="col col-xxl-7" scope="col">Nome</th>
-                                                    <th class="text-center col-auto" scope="col">Data inizio</th>
-                                                    <th class="text-center col-auto" scope="col">ROI</th>
-                                                    <th class="text-center col-auto" scope="col">Stato</th>
-                                                    <th class="text-center col-auto" scope="col">Azioni</th>
+
+                                                    <th class="col col-xxl-7" scope="col">
+                                                        Nome
+                                                    </th>
+
+                                                    <th class="text-center col-auto d-none d-md-table-cell" scope="col">
+                                                        Data inizio
+                                                    </th>
+
+                                                    <th class="text-center col-auto d-none d-md-table-cell" scope="col">
+                                                        ROI
+                                                    </th>
+
+                                                    <th class="text-center col-auto" scope="col">
+                                                        Stato
+                                                    </th>
+
+                                                    <th class="text-center col-auto" scope="col">
+                                                        Azioni
+                                                    </th>
+
                                                   </tr>
                                                 </thead>
+
+                                                <!-- corpo tabella -->
                                                 <tbody>
-                                                  <tr>
-                                                    <td> <i class="fa-solid fa-code"></i>Classe 75</th>
-                                                    <td class="text-center col-auto">15 Feb 2021</td>
-                                                    <td class="text-center col-auto">20%</td>
-                                                    <td class="text-center col-auto"><span class="badge text-bg-success">Done</span></td>
-                                                    <td class="text-center col-auto">
-                                                      <a href=""><i class="bi bi-pencil-fill"></i></a>
-                                                      <a href=""><i class="bi bi-trash-fill"></i></a>
-                                                    </td>
-                                                  </tr>
-                                          
+                                                    <!--riga  -->
+                                                    <tr>
+                                                        <!-- nome -->
+                                                        <td>
+                                                            <i class="fa-solid fa-code"></i>Classe 75
+                                                        </td>
+                                                        
+                                                        <!-- data -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            15 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- stato -->
+                                                        <td class="text-center col-auto">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+
+                                                        <!-- Azioni -->
+                                                        <td class="text-center col-auto">
+                                                            <a href="">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </a>
+                                                            <a href="">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        
+                                                    </tr>
+
+                                                    <!--riga  -->
+                                                    <tr>
+                                                        <!-- nome -->
+                                                        <td>
+                                                            <i class="fa-solid fa-code"></i>Classe 76
+                                                        </td>
+                                                        
+                                                        <!-- data -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            16 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- stato -->
+                                                        <td class="text-center col-auto">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+
+                                                        <!-- Azioni -->
+                                                        <td class="text-center col-auto">
+                                                            <a href="">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </a>
+                                                            <a href="">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        
+                                                    </tr>
+
+                                                    <!--riga  -->
+                                                    <tr>
+                                                        <!-- nome -->
+                                                        <td>
+                                                            <i class="fa-solid fa-code"></i>Classe 77
+                                                        </td>
+                                                        
+                                                        <!-- data -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            17 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- stato -->
+                                                        <td class="text-center col-auto">
+                                                            <span class="badge text-bg-warning">process</span>
+                                                        </td>
+
+                                                        <!-- Azioni -->
+                                                        <td class="text-center col-auto">
+                                                            <a href="">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </a>
+                                                            <a href="">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        
+                                                    </tr>
+
+                                                    <!--riga  -->
+                                                    <tr>
+                                                        <!-- nome -->
+                                                        <td>
+                                                            <i class="fa-solid fa-code"></i>Classe 78
+                                                        </td>
+                                                        
+                                                        <!-- data -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            18 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- stato -->
+                                                        <td class="text-center col-auto">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+
+                                                        <!-- Azioni -->
+                                                        <td class="text-center col-auto">
+                                                            <a href="">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </a>
+                                                            <a href="">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        
+                                                    </tr>
+
+                                                    <!--riga  -->
+                                                    <tr>
+                                                        <!-- nome -->
+                                                        <td>
+                                                            <i class="fa-solid fa-code"></i>Classe 79
+                                                        </td>
+                                                        
+                                                        <!-- data -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            19 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- stato -->
+                                                        <td class="text-center col-auto">
+                                                            <span class="badge text-bg-danger">failed</span>
+                                                        </td>
+
+                                                        <!-- Azioni -->
+                                                        <td class="text-center col-auto">
+                                                            <a href="">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </a>
+                                                            <a href="">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        
+                                                    </tr>
+
+                                                    <!--riga  -->
+                                                    <tr>
+                                                        <!-- nome -->
+                                                        <td>
+                                                            <i class="fa-solid fa-code"></i>Classe 80
+                                                        </td>
+                                                        
+                                                        <!-- data -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- stato -->
+                                                        <td class="text-center col-auto">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+
+                                                        <!-- Azioni -->
+                                                        <td class="text-center col-auto">
+                                                            <a href="">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </a>
+                                                            <a href="">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        
+                                                    </tr>
+
+                                                    <!--riga  -->
+                                                    <tr>
+                                                        <!-- nome -->
+                                                        <td>
+                                                            <i class="fa-solid fa-code"></i>Classe 81
+                                                        </td>
+                                                        
+                                                        <!-- data -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            21 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- stato -->
+                                                        <td class="text-center col-auto">
+                                                            <span class="badge text-bg-danger">failed</span>
+                                                        </td>
+
+                                                        <!-- Azioni -->
+                                                        <td class="text-center col-auto">
+                                                            <a href="">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </a>
+                                                            <a href="">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        
+                                                    </tr>
+
+                                                    <!--riga  -->
+                                                    <tr>
+                                                        <!-- nome -->
+                                                        <td>
+                                                            <i class="fa-solid fa-code"></i>Classe 82
+                                                        </td>
+                                                        
+                                                        <!-- data -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            22 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="text-center col-auto d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- stato -->
+                                                        <td class="text-center col-auto">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+
+                                                        <!-- Azioni -->
+                                                        <td class="text-center col-auto">
+                                                            <a href="">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </a>
+                                                            <a href="">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </td>
+                                                        
+                                                    </tr>
+                       
                                                 </tbody>
                                               </table>
                                         </div>
@@ -362,7 +643,7 @@
 
                                          <!-- Accordion BS: https://getbootstrap.com/docs/5.3/components/accordion/ -->
                                          <div class="card">
-                                            <div class="card-header">
+                                            <div class="card-header fs-3">
                                               F.A.Q.
                                             </div>
                                             
@@ -412,38 +693,56 @@
 
                                  <!-- colonna destra -->
                                  <div class="col-12 col-md-5">
-                                    <div class="box">
+                                    <div class="ms_container">
 
                                         <!-- Checkbox nelle card BS: https://getbootstrap.com/docs/5.3/forms/checks-radios/ -->
                                         <div class="card">
                                             <!-- titolo card -->
-                                            <div class="card-header">
+                                            <div class="card-header fs-3">
                                               Todo
                                             </div>
 
-                                            <!-- Checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Default checkbox
-                                                </label>
+                                            <!-- corpo della card -->
+                                            <div class="card m-3">
+
+                                                <!-- elenco per le check-box BS:  https://getbootstrap.com/docs/5.3/components/card/#about + https://getbootstrap.com/docs/5.3/forms/checks-radios/-->
+                                                <ul class="list-group list-group-flush">
+                                                    <!-- Checkbox -->
+                                                    <li class="list-group-item">
+                                                       <!-- form -->
+                                                        <div class="form-check">
+                                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                          <label class="form-check-label" for="flexCheckDefault">
+                                                          Default checkbox
+                                                          </label>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <!-- Checkbox -->
+                                                    <li class="list-group-item">
+                                                      <!-- form -->
+                                                       <div class="form-check">
+                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                         <label class="form-check-label" for="flexCheckDefault">
+                                                         Default checkbox
+                                                         </label>
+                                                       </div>
+                                                    </li>
+                                                    
+                                                    <!-- Checkbox -->
+                                                    <li class="list-group-item">
+                                                      <!-- Form -->
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        Default checkbox
+                                                        </label>
+                                                      </div>
+                                                    </li>
+
+                                                </ul>
                                             </div>
 
-                                            <!-- Checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                Checked checkbox
-                                                </label>
-                                            </div>
-
-                                            <!-- Checkbox -->
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                Checked checkbox
-                                                </label>
-                                            </div>
                                         </div>
 
                                         <!-- card con Grafico Utenti attivi -->
