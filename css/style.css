@@ -36,6 +36,32 @@ body{
     display: none;
 }
 
+/**** barra di ricerca ****/
+/* modifica elementi lente di ricerca */
+.btn.btn-light{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgb(229 229 229);
+    border: none;
+}
+
+/* modifica sfondo e bordi barra di ricerca */
+.form-control{
+    background-color: rgb(229 229 229);
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* modifica dei bordi e colore al click nella barra */
+.form-control:focus{
+    background-color: rgb(229 229 229);
+    border-color: none;
+    box-shadow: none;
+}
+
+/**** /barra di ricerca ****/
+
 /* icona di offcavas */
 .fa-bell{
     color: orange;
@@ -43,7 +69,7 @@ body{
 }
 
 .ms_right_icons{
-    color: gray;
+    color: rgb(61, 60, 60);
     display: none;
     margin: 10px;
 }
@@ -162,7 +188,7 @@ body{
 
 /* aggiunstamento cointainer mio per dashboard */
 .ms_container{
-    padding: 20px 0 40px 23px;
+    padding: 20px 23px 40px 23px;
 }
 
 /* modifiche della tabella */

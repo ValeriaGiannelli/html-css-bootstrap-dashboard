@@ -26,7 +26,7 @@
 </head>
 
 <body>
-
+    <!-- parte superiore -->
     <section id="header" class="fixed-top bg-light">
 
         <div class="container-fluid">
@@ -45,7 +45,8 @@
                 <!-- barra di navigazione -->
                 <div class="col p-0">
 
-                    <!-- Search bar BS: https://getbootstrap.com/docs/5.3/components/navbar/ -->
+                    <!-- Search bar BS: https://getbootstrap.com/docs/5.3/components/navbar/#forms -->
+
                     <form class="d-flex" role="search">
                         <!-- bottone lente -->
                         <button class="btn btn-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -60,9 +61,17 @@
                 <div class="col-auto text-end ps-0">
 
                         <!-- icone supplemetari da desktop -->
-                        <a href="#" class="ms_right_icons"><i class="fa-solid fa-list"></i></a>
-                        <a href="#" class="ms_right_icons"><i class="fa-solid fa-question"></i></a>
-                        <a href="#" class="ms_right_icons"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        <a href="#" class="ms_right_icons">
+                            <i class="fa-solid fa-list"></i>
+                        </a>
+
+                        <a href="#" class="ms_right_icons">
+                            <i class="bi bi-question-circle-fill"></i>
+                        </a>
+
+                        <a href="#" class="ms_right_icons">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </a>
 
 
                         <!-- campanella con dropdown BS: https://getbootstrap.com/docs/5.3/components/dropdowns/#overview -->
@@ -78,14 +87,15 @@
                         </ul>
                     
                 </div>
+                <!-- /tasti destra -->
 
             </div>
         </div>
     </section>
+    <!-- /parte superiore -->
 
-
+    <!-- parte inferiore della webapp-->
     <div class="container-fluid">
-        <!-- corpo centrale -->
         <!-- messo un maringe mio per prendere tutto lo spazio -->
         <div class="ms_margin">
 
@@ -129,6 +139,7 @@
                         
                     </div>
                 </div>
+                <!-- /menu di sinistra -->
 
                 <!-- contenuto centrale tolto dei padding -->
                 <div class="col p-0">
@@ -318,14 +329,13 @@
                             </div>
                         </div>
 
-                        <!-- contenuto dashboard -->
-                        <div class="bg-light">
+                        <!-- contenuto dashboard con mio container e background light -->
+                        <div class="ms_container bg-light">
                             <!-- riga -->
                             <div class="row">
 
                                 <!-- colonna sinistra -->
                                 <div class="col-12 col-md-7">
-                                    <div class="ms_container">
 
                                         <!-- Lista classi BS: https://getbootstrap.com/docs/5.3/components/card/#about -->
                                         <div class="card mb-4">
@@ -688,100 +698,100 @@
 
                                         </div>
 
-                                    </div>
                                 </div>
+                                <!-- /colonna sinistra -->
 
-                                 <!-- colonna destra -->
-                                 <div class="col-12 col-md-5">
-                                    <div class="ms_container">
+                                <!-- colonna destra -->
+                                <div class="col-12 col-md-5">
 
-                                        <!-- Checkbox nelle card -->
-                                        <div class="card">
-                                            <!-- titolo card -->
-                                            <div class="card-header fs-3">
-                                              Todo
-                                            </div>
+                                    <!-- Checkbox nelle card -->
+                                    <div class="card">
+                                        <!-- titolo card -->
+                                        <div class="card-header fs-3">
+                                            Todo
+                                        </div>
 
-                                            <!-- corpo della card -->
-                                            <div class="card m-3">
+                                        <!-- corpo della card -->
+                                        <div class="card m-3">
 
-                                                <!-- elenco per le check-box BS:  https://getbootstrap.com/docs/5.3/components/card/#list-groups + https://getbootstrap.com/docs/5.3/forms/checks-radios/#checks-->
-                                                <ul class="list-group list-group-flush">
-                                                    <!-- Checkbox -->
-                                                    <li class="list-group-item">
-                                                       <!-- form -->
-                                                        <div class="form-check">
-                                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                          <label class="form-check-label" for="flexCheckDefault">
-                                                          Default checkbox
-                                                          </label>
-                                                        </div>
-                                                    </li>
-                                                    
-                                                    <!-- Checkbox -->
-                                                    <li class="list-group-item">
-                                                      <!-- form -->
-                                                       <div class="form-check">
-                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                         <label class="form-check-label" for="flexCheckDefault">
-                                                         Default checkbox
-                                                         </label>
-                                                       </div>
-                                                    </li>
-                                                    
-                                                    <!-- Checkbox -->
-                                                    <li class="list-group-item">
-                                                      <!-- Form -->
-                                                      <div class="form-check">
+                                            <!-- elenco per le check-box BS:  https://getbootstrap.com/docs/5.3/components/card/#list-groups + https://getbootstrap.com/docs/5.3/forms/checks-radios/#checks-->
+                                            <ul class="list-group list-group-flush">
+                                                <!-- Checkbox -->
+                                                <li class="list-group-item">
+                                                    <!-- form -->
+                                                    <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                                         <label class="form-check-label" for="flexCheckDefault">
                                                         Default checkbox
                                                         </label>
-                                                      </div>
-                                                    </li>
+                                                    </div>
+                                                </li>
+                                                
+                                                <!-- Checkbox -->
+                                                <li class="list-group-item">
+                                                    <!-- form -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        Default checkbox
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                
+                                                <!-- Checkbox -->
+                                                <li class="list-group-item">
+                                                    <!-- Form -->
+                                                    <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Default checkbox
+                                                    </label>
+                                                    </div>
+                                                </li>
 
-                                                </ul>
-                                            </div>
-
+                                            </ul>
                                         </div>
 
-                                        <!-- card con Grafico Utenti attivi BS: https://getbootstrap.com/docs/5.3/components/card/#kitchen-sink-->
-                                        <div class="card">
-                                            <div class="card m-3">
-                                                <img src="img/stats.jpeg" class="card-img-top" alt="...">
-
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Utenti attivi</h5>
-                                                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
-                                                </div>
-
-                                                <ul class="list-group list-group-flush">
-                                                  <li class="list-group-item">Gennaio: 1200</li>
-                                                  <li class="list-group-item">Febbraio: 800</li>
-                                                  <li class="list-group-item">Marzo: 1500</li>
-                                                </ul>
-
-                                                <div class="card-body">
-                                                  <a href="#" class="card-link">Visualizza report approfondito</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       
                                     </div>
+
+                                    <!-- card con Grafico Utenti attivi BS: https://getbootstrap.com/docs/5.3/components/card/#kitchen-sink-->
+                                    <div class="card mt-3">
+                                        <div class="card m-3">
+                                            <img src="img/stats.jpeg" class="card-img-top" alt="...">
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Utenti attivi</h5>
+                                                <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
+                                            </div>
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Gennaio: 1200</li>
+                                                <li class="list-group-item">Febbraio: 800</li>
+                                                <li class="list-group-item">Marzo: 1500</li>
+                                            </ul>
+
+                                            <div class="card-body">
+                                                <a href="#" class="card-link">Visualizza report approfondito</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+                                <!-- /colonna destra -->
 
                             </div>
                         </div>
+                        <!-- /contenuto dashboard -->
                         
                     </div>
                 </div>
+                <!-- /contenuto centrale -->
     
             </div>
-        </div>
-        
-    
-    </div>
 
+        </div>    
+    </div>
+    <!-- /parte inferiore della webapp -->
 
  <!-- BS JavaScript -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
