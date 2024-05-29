@@ -179,6 +179,7 @@ body{
 /* aggiunstamento cointainer mio per dashboard */
 .ms_container{
     padding: 20px 23px 40px 23px;
+    height: 100%;
 }
 
 /* modifiche della tabella */
