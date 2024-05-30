@@ -110,6 +110,10 @@ body{
     background-color: rgb(11 28 52);
 }
 
+.ms_overflow{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
 /************  RESPONSIVE - barra in alto **************/
 @media all and (min-width:992px) {
