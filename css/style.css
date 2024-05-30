@@ -110,6 +110,15 @@ body{
     background-color: rgb(11 28 52);
 }
 
+.ms-dimension{
+    width: 30px;
+    padding: 5px;
+}
+
+.ms_hover_link:hover div{
+    background-color: rgb(217, 214, 214);
+}
+
 .ms_overflow{
     overflow-y: auto;
     overflow-x: hidden;
@@ -117,7 +126,11 @@ body{
 
 /************  RESPONSIVE - barra in alto **************/
 @media all and (min-width:992px) {
-  
+    .ms-dimension{
+        width: 95px;
+        padding: 5px;
+    }
+
     .fa-house{
         padding-right: 12px;
     }
